@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #232323;
+    line-height: 1;
+  }
+}
+@layer components {
+  .container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  body {
+    height: 200vh;
+  }
+  input,
+  button {
+    outline: none;
+  }
+  .home-block {
+    margin-top: 60px;
+  }
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    &-primary {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  thead {
+    background-color: #f4f5f6;
+  }
+  th {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  td {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  th,
+  td {
+    padding: 20px;
+    vertical-align: middle;
+    text-align: left;
+  }
+}

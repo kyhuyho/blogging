@@ -1,0 +1,12 @@
+.custom-radio-spin {
+  width: 12px;
+  height: 12px;
+  background-color: #eee;
+}
+.custom-radio-spin div {
+  box-shadow: 0 0 0 5px #eee;
+}
+.custom-radio input:checked + div .custom-radio-spin div {
+  background-color: #00b4aa;
+  box-shadow: 0 0 0 2.5px #eee, 0 0 0 5px #00b4aa;
+}
